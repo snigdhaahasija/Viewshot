@@ -35,9 +35,8 @@ public class ViewShot : MonoBehaviour {
 	void OnGUI () {
 
 		if (shot) {
-			GUI.DrawTexture (new Rect (10, 10, 60, 40), View, ScaleMode.StretchToFill);
+			Debug.Log(string.Format("Screenshot Captured"));
 		}
-
 	}
 
 	IEnumerator Capture(){
